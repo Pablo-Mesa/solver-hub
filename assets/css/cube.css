@@ -1,0 +1,24 @@
+/* Cubo de seis caras: la profundidad es exactamente la mitad de la arista. */
+#solver-cube {perspective: 900px; perspective-origin: 50% 45%; overflow: visible;}
+#solver-cube .header-title {display:flex; align-items:center; justify-content:center; width:100%;}
+#solver-cube .container-cube {width:var(--cube-size);height:var(--cube-size);position:relative;transform-style:preserve-3d;}
+#solver-cube .cube {width:100%;height:100%;position:relative;transform-style:preserve-3d;
+  transform:rotateX(-23deg) rotateY(-32deg);
+  animation:solver-girar 18s linear infinite;}
+#solver-cube .cara {position:absolute;inset:0;display:block;backface-visibility:visible;
+  background:#263446 url('../images/icono_solver_nobg.png') center/cover no-repeat;
+  border:2px solid rgba(164,203,229,.55);
+  box-shadow:inset 0 0 24px rgba(0,0,0,.32);}
+#solver-cube #uno {transform:rotateY(0deg) translateZ(calc(var(--cube-size) * .5));}
+#solver-cube #dos {transform:rotateY(90deg) translateZ(calc(var(--cube-size) * .5));}
+#solver-cube #tres {transform:rotateY(180deg) translateZ(calc(var(--cube-size) * .5));}
+#solver-cube #cuatro {transform:rotateY(-90deg) translateZ(calc(var(--cube-size) * .5));}
+#solver-cube #cinco {transform:rotateX(90deg) translateZ(calc(var(--cube-size) * .5));}
+#solver-cube #seis {transform:rotateX(-90deg) translateZ(calc(var(--cube-size) * .5));}
+@keyframes solver-girar {
+  from {transform:rotateX(-23deg) rotateY(-32deg);}
+  to {transform:rotateX(-23deg) rotateY(328deg);}
+}
+@media(prefers-reduced-motion:reduce) {
+  #solver-cube .cube {animation:none;transform:rotateX(-23deg) rotateY(-32deg);}
+}

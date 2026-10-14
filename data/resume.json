@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Pablo Mesa",
+    "label": "Desarrollo de software y soluciones digitales",
+    "email": "pablomesa1985@gmail.com",
+    "phone": "+595971279263",
+    "summary": "Observar cómo se trabaja, comprender los procesos y construir herramientas digitales útiles.",
+    "location": {
+      "countryCode": "PY"
+    },
+    "profiles": []
+  },
+  "skills": [
+    {
+      "name": "Interfaz web",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Lógica y datos",
+      "keywords": [
+        "PHP",
+        "MySQL"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Solver App",
+      "description": "Aplicación web PHP/MySQL para organizar procesos operativos y administrativos mediante Cuaderno y Control de Asistencias.",
+      "highlights": [
+        "Cuaderno",
+        "Control de Asistencias"
+      ],
+      "keywords": [
+        "PHP",
+        "MySQL"
+      ]
+    }
+  ]
+}
